@@ -1,0 +1,54 @@
+name: kinasevych-dev-d9
+recipe: drupal9
+config:
+  php: 7.4
+  webroot: web/
+  via: nginx
+  database: mysql:5.7
+  drush: true
+  xdebug: true
+  drupal: true
+  config:
+    database: mysql
+    php: .lando/php.ini
+proxy:
+  mailhog:
+    - mail.kinasevych-dev-d9.lndo.site
+  phpmyadmin:
+    - pma.kinasevych-dev-d9.lndo.site
+services:
+  appserver:
+    overrides:
+      environment:
+        DB_HOST: database
+        DB_NAME: drupal9
+        DB_USER: drupal9
+        DB_PASSWORD: drupal9
+        DB_ROOT_PASSWORD: ""
+        DB_DRIVER: mysql
+        PHP_IDE_CONFIG: 'serverName=kinasevych-dev-d9.lndo.site'
+        DRUSH_OPTIONS_URI: 'http://kinasevych-dev-d9.lndo.site'
+        COMPOSE_HTTP_TIMEOUT: 3600
+        PWD: '/app'
+    build:
+      - composer install --ansi --optimize-autoloader --quiet --no-interaction
+
+  mailhog:
+    type: mailhog
+    hogfrom:
+      - appserver
+  phpmyadmin:
+    type: phpmyadmin
+    hosts:
+      - database
+tooling:
+  phpcs:
+    service: appserver
+    description: 'Run phpcs'
+    cmd:
+      - phpcs
+  phpcbf:
+    service: appserver
+    description: 'Run phpcbf'
+    cmd:
+      - /app/vendor/bin/phpcbf
