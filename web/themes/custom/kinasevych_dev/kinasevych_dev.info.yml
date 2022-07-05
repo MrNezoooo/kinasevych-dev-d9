@@ -1,0 +1,15 @@
+name: KinasevychDev theme
+description: A starter kit theme for Drupal 9 and Tailwind CSS.
+core: 8.x
+core_version_requirement: ^8 || ^9
+screenshot: screenshot.jpg
+type: theme
+base theme: classy
+libraries:
+  - kinasevych_dev/global-styling
+  - kinasevych_dev/global-scripts
+  - kinasevych_dev/fonts
+
+regions:
+  content: 'Content'
+  phantom: 'Phantom'
