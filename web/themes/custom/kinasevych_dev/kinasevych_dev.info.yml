@@ -4,7 +4,7 @@ core: 8.x
 core_version_requirement: ^8 || ^9
 screenshot: screenshot.jpg
 type: theme
-base theme: classy
+base theme: stable
 libraries:
   - kinasevych_dev/global-styling
   - kinasevych_dev/global-scripts
