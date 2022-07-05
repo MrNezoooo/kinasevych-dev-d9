@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-size-adjust: none;
+}
+
+html,
+body {
+  @apply tw-text-sm;
+  font-family: 'Montserrat', sans-serif;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  &.hero-name {  /*, &.inner-page*/
+    @apply tw-text-6xl tw-font-semibold tw-text-white;
+
+    margin: 70px 0 27px 0;
+  }
+
+  &.inner-page {
+    @apply tw-uppercase tw-text-5xl tw-font-bold tw-text-black;
+
+    margin-top: 70px;
+    margin-bottom: 40px;
+
+    span {
+      color: $primary-yellow;
+    }
+  }
+}
+
+  .inner-page:after {
+      content: '';
+      background-color: black;
+      height: 1px;
+      display: block;
+      margin-top: 20px;
+    }
+
+h2 {
+  &.block-title {
+    @apply tw-uppercase tw-text-3xl tw-mb-10;
+  }
+}
+
+a {
+  text-decoration: none;
+  transition: color .3s ease;
+
+  &:hover {
+    color: #403f3f;
+  }
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+p {
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

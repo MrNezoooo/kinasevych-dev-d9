@@ -1,0 +1,44 @@
+.title-bottom-line {
+  &:after {
+    @apply tw-mb-10;
+
+    margin-top: 20px;
+    content: '';
+    background-color: black;
+    height: 1px;
+    display: block;
+  }
+}
+
+.btn {
+  @apply tw-flex tw-justify-center tw-uppercase tw-text-base;
+
+  padding: 15px 13px;
+  border: 2.5px solid $primary-yellow;
+  width: fit-content;
+  width: -moz-fit-content;
+  min-width: 215px;
+  transition: all .3s ease;
+
+  &:hover {
+    background: $primary-yellow;
+    color: #fff;
+  }
+
+  &--yellow {
+    @apply tw-text-white;
+
+    background: $primary-yellow;
+
+    &:hover {
+      background-color: #e88004;
+      border-color: #e88004;
+    }
+  }
+
+  &--with-icon {
+    span {
+      margin-right: 13px;
+    }
+  }
+}

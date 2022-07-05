@@ -1,0 +1,11 @@
+.path {
+  &-frontpage {
+    .main-background {
+      @apply tw-absolute tw-bg-cover tw-bg-no-repeat tw-w-full tw-h-full;
+
+      background-image: url('/themes/custom/kinasevych_dev/images/main-background.png');
+      z-index: -1;
+    }
+  }
+}
+

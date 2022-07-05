@@ -1,0 +1,15 @@
+<header class="header">
+  <div class="header-top tw-container">
+    <a class="logo" href="{{ front_page }}">
+      <img src="{{ logopath }}" alt="{{ site_name }}">
+    </a>
+    <div class="header-right">
+      <div class="phones">
+        {{ drupal_entity('block', 'headerphone', check_access=false) }}
+      </div>
+      <div class="email">
+        {{ drupal_entity('block', 'headeremail', check_access=false) }}
+      </div>
+    </div>
+  </div>
+</header>

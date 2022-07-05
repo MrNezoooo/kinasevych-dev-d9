@@ -1,0 +1,94 @@
+.title-bottom-line:after {
+  @apply tw-mb-10;
+  margin-top: 20px;
+  content: "";
+  background-color: black;
+  height: 1px;
+  display: block;
+}
+
+.btn {
+  @apply tw-flex tw-justify-center tw-uppercase tw-text-base;
+  padding: 15px 13px;
+  border: 2.5px solid #f9931b;
+  width: fit-content;
+  width: -moz-fit-content;
+  min-width: 215px;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background: #f9931b;
+  color: #fff;
+}
+.btn--yellow {
+  @apply tw-text-white;
+  background: #f9931b;
+}
+.btn--yellow:hover {
+  background-color: #e88004;
+  border-color: #e88004;
+}
+.btn--with-icon span {
+  margin-right: 13px;
+}
+
+@layer base {
+  *,
+*::before,
+*::after {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-size-adjust: none;
+  }
+  html,
+body {
+    @apply tw-text-sm;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  h1.hero-name { /*, &.inner-page*/
+    @apply tw-text-6xl tw-font-semibold tw-text-white;
+    margin: 70px 0 27px 0;
+  }
+  h1.inner-page {
+    @apply tw-uppercase tw-text-5xl tw-font-bold tw-text-black;
+    margin-top: 70px;
+    margin-bottom: 40px;
+  }
+  h1.inner-page span {
+    color: #f9931b;
+  }
+  .inner-page:after {
+    content: "";
+    background-color: black;
+    height: 1px;
+    display: block;
+    margin-top: 20px;
+  }
+  h2.block-title {
+    @apply tw-uppercase tw-text-3xl tw-mb-10;
+  }
+  a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  a:hover {
+    color: #403f3f;
+  }
+  img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+.path-frontpage .main-background {
+  @apply tw-absolute tw-bg-cover tw-bg-no-repeat tw-w-full tw-h-full;
+  background-image: url("/themes/custom/kinasevych_dev/images/main-background.png");
+  z-index: -1;
+}

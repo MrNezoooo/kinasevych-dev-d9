@@ -1,0 +1,56 @@
+body {
+  &:not(.path-frontpage) {
+    .header {
+      background: #000423;
+    }
+  }
+}
+
+.header {
+  background: rgba(0,0,0,.2);
+
+  &-top {
+    @apply tw-flex tw-justify-between tw-items-center;
+
+    height: 100px;
+
+    .header-right {
+      @apply tw-flex tw-justify-between tw-items-center tw-w-full;
+
+      max-width: 525px;
+    }
+
+    .block-header {
+      @apply tw-flex tw-items-center;
+
+      &.phone {
+        @apply tw-flex tw-items-center;
+
+        width: 212px;
+
+        .phone-link {
+          @apply tw-text-white tw-text-lg;
+        }
+
+        img {
+          margin-right: 10px;
+        }
+      }
+
+      &.email {
+        @apply tw-flex tw-items-center;
+
+
+        .email-link {
+          @apply tw-text-white tw-text-lg;
+        }
+
+        img {
+          margin-right: 10px;
+        }
+      }
+
+    }
+  }/* /-top */
+}/* /block-header */
+
