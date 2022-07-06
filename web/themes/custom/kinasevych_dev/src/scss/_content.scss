@@ -1,11 +1,34 @@
 .path {
   &-frontpage {
     .main-background {
-      @apply tw-absolute tw-bg-cover tw-bg-no-repeat tw-w-full tw-h-full;
+
+//@apply tw-absolute tw-bg-cover tw-bg-no-repeat tw-w-full tw-h-full;
+      position: absolute;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 143%;
 
       background-image: url('/themes/custom/kinasevych_dev/images/main-background.png');
       z-index: -1;
     }
   }
+}
+
+.block {
+  &-hero {
+    @apply tw-mt-32;
+
+    margin-bottom: 139px;
+
+    p {
+      @apply tw-text-lg;
+
+      margin-bottom: 50px;
+      color: $primary-yellow;
+    }
+
+  } /* /about */
+
 }
 

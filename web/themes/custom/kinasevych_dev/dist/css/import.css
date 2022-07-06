@@ -10,23 +10,23 @@
 .btn {
   @apply tw-flex tw-justify-center tw-uppercase tw-text-base;
   padding: 15px 13px;
-  border: 2.5px solid #f9931b;
+  border: 2.5px solid #099CD7;
   width: fit-content;
   width: -moz-fit-content;
   min-width: 215px;
   transition: all 0.3s ease;
 }
 .btn:hover {
-  background: #f9931b;
+  background: #099CD7;
   color: #fff;
 }
 .btn--yellow {
   @apply tw-text-white;
-  background: #f9931b;
+  background: #099CD7;
 }
 .btn--yellow:hover {
-  background-color: #e88004;
-  border-color: #e88004;
+  background-color: #0770a5;
+  border-color: #0770a5;
 }
 .btn--with-icon span {
   margin-right: 13px;
@@ -85,7 +85,7 @@ body {
     margin-bottom: 40px;
   }
   h1.inner-page span {
-    color: #f9931b;
+    color: #099CD7;
   }
   .inner-page:after {
     content: "";
@@ -125,6 +125,9 @@ body:not(.path-frontpage) .header {
   @apply tw-flex tw-justify-between tw-items-center;
   height: 100px;
 }
+.header-top img {
+  max-width: 30%;
+}
 .header-top .header-right {
   @apply tw-flex tw-justify-between tw-items-center tw-w-full;
   max-width: 525px;
@@ -154,7 +157,24 @@ body:not(.path-frontpage) .header {
 
 /* /block-header */
 .path-frontpage .main-background {
-  @apply tw-absolute tw-bg-cover tw-bg-no-repeat tw-w-full tw-h-full;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 143%;
   background-image: url("/themes/custom/kinasevych_dev/images/main-background.png");
   z-index: -1;
+}
+
+.block {
+  /* /about */
+}
+.block-hero {
+  @apply tw-mt-32;
+  margin-bottom: 139px;
+}
+.block-hero p {
+  @apply tw-text-lg;
+  margin-bottom: 50px;
+  color: #099CD7;
 }

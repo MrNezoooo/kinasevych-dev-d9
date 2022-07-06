@@ -13,7 +13,7 @@
   text-transform: uppercase;
   font-size: 1rem;
   padding: 15px 13px;
-  border: 2.5px solid #f9931b;
+  border: 2.5px solid #099CD7;
   width: -webkit-fit-content;
   width: fit-content;
   width: -moz-fit-content;
@@ -22,7 +22,7 @@
 }
 
 .btn:hover {
-  background: #f9931b;
+  background: #099CD7;
   color: #fff;
 }
 
@@ -30,12 +30,12 @@
   --text-opacity: 1;
   color: #fff;
   color: rgba(255, 255, 255, var(--text-opacity));
-  background: #f9931b;
+  background: #099CD7;
 }
 
 .btn--yellow:hover {
-  background-color: #e88004;
-  border-color: #e88004;
+  background-color: #0770a5;
+  border-color: #0770a5;
 }
 
 .btn--with-icon span {
@@ -120,7 +120,7 @@ h1.inner-page {
 }
 
 h1.inner-page span {
-  color: #f9931b;
+  color: #099CD7;
 }
 
 .inner-page:after {
@@ -170,6 +170,10 @@ body:not(.path-frontpage) .header {
   justify-content: space-between;
   align-items: center;
   height: 100px;
+}
+
+.header-top img {
+  max-width: 30%;
 }
 
 .header-top .header-right {
@@ -225,9 +229,24 @@ body:not(.path-frontpage) .header {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100%;
+  height: 143%;
   background-image: url("/themes/custom/kinasevych_dev/images/main-background.png");
   z-index: -1;
+}
+
+.block {
+  /* /about */
+}
+
+.block-hero {
+  margin-top: 8rem;
+  margin-bottom: 139px;
+}
+
+.block-hero p {
+  font-size: 1.125rem;
+  margin-bottom: 50px;
+  color: #099CD7;
 }/**
  * This injects Tailwind's base styles, which is a combination of
  * Normalize.css and some additional base styles.
