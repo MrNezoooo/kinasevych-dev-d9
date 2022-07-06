@@ -32,6 +32,32 @@
   margin-right: 13px;
 }
 
+.block-mainmenu {
+  @apply tw-text-4xl tw-text-white;
+  max-width: 700px;
+}
+.block-mainmenu .main-menu {
+  margin-bottom: 115px;
+}
+.block-mainmenu .main-menu--list {
+  @apply tw-flex tw-flex-wrap;
+}
+.block-mainmenu .main-menu--list li {
+  margin-bottom: 50px;
+}
+.block-mainmenu .main-menu--list li.item-1 {
+  margin-left: 2rem;
+}
+.block-mainmenu .main-menu--list li.item-2 {
+  margin-left: 9rem;
+}
+.block-mainmenu .main-menu--list li.item-3 {
+  margin-left: 10rem;
+}
+.block-mainmenu .main-menu--list li.item-4 {
+  margin-left: 11rem;
+}
+
 @layer base {
   *,
 *::before,
@@ -87,6 +113,46 @@ body {
     margin-bottom: 0;
   }
 }
+body:not(.path-frontpage) .header {
+  background: #000423;
+}
+
+.header {
+  background: rgba(0, 0, 0, 0.2);
+  /* /-top */
+}
+.header-top {
+  @apply tw-flex tw-justify-between tw-items-center;
+  height: 100px;
+}
+.header-top .header-right {
+  @apply tw-flex tw-justify-between tw-items-center tw-w-full;
+  max-width: 525px;
+}
+.header-top .block-header {
+  @apply tw-flex tw-items-center;
+}
+.header-top .block-header.phone {
+  @apply tw-flex tw-items-center;
+  width: 212px;
+}
+.header-top .block-header.phone .phone-link {
+  @apply tw-text-white tw-text-lg;
+}
+.header-top .block-header.phone img {
+  margin-right: 10px;
+}
+.header-top .block-header.email {
+  @apply tw-flex tw-items-center;
+}
+.header-top .block-header.email .email-link {
+  @apply tw-text-white tw-text-lg;
+}
+.header-top .block-header.email img {
+  margin-right: 10px;
+}
+
+/* /block-header */
 .path-frontpage .main-background {
   @apply tw-absolute tw-bg-cover tw-bg-no-repeat tw-w-full tw-h-full;
   background-image: url("/themes/custom/kinasevych_dev/images/main-background.png");

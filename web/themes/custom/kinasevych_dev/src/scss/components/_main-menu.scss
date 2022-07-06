@@ -1,0 +1,35 @@
+.block-mainmenu {
+  @apply tw-text-4xl tw-text-white;
+
+  max-width: 700px;
+
+  .main-menu {
+    margin-bottom: 115px;
+
+    &--list {
+      @apply tw-flex tw-flex-wrap;
+
+      li {
+        margin-bottom: 50px;
+
+        &.item {
+          &-1 {
+            margin-left: 2rem;
+          }
+
+          &-2 {
+            margin-left: 9rem;
+          }
+
+          &-3 {
+            margin-left: 10rem;
+          }
+
+          &-4 {
+            margin-left: 11rem;
+          }
+        }
+      }
+    }
+  }
+}

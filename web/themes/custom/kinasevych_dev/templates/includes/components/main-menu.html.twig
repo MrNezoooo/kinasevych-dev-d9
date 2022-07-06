@@ -1,0 +1,17 @@
+<div class="main-menu">
+  {# Get main menu items #}
+  {% set main_menu_items = simplify_menu('main') %}
+
+  <ul class="main-menu--list" role="menu">
+    {% for menu_item in main_menu_items.menu_tree %}
+
+      <li class="main-menu--item item-{{ loop.index }}">{#loop.index це i (це порядок в списку)#}
+        <a href="{{ menu_item.url }}"
+           class="main-menu--link">
+          <span>{{ menu_item.text }}</span>
+        </a>
+      </li>
+
+    {% endfor %}
+  </ul>
+</div>

@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Default theme implementation to display a single page.
+ * Theme override to display a single page.
  *
  * The doctype, html, head and body tags are not in this template. Instead they
  * can be found in the html.html.twig template in this directory.
@@ -41,18 +41,14 @@
  *
  * @see template_preprocess_page()
  * @see html.html.twig
- *
- * @ingroup themeable
  */
 #}
+
 
 <div class="main-background"></div>
 
 {# Include header twig template #}
 {% include '@kinasevych_dev/includes/header.html.twig' %}
-
-{# Include header twig template #}
-{#{% include '@sychenko_dev/includes/header.html.twig' %}#}
 
 
 {{ page.highlighted }}
@@ -60,19 +56,19 @@
 {{ page.help }}
 
 
-{#<div class="content" role="main">#}
-{#  <div class="content-inner tw-container">#}
+<div class="content" role="main">
+  <div class="content-inner tw-container">
 
-{#    #}{# Block - hero #}
-{#    <div class="block-hero">#}
-{#      {{ drupal_entity('block', 'hero', check_access=false) }}#}
-{#    </div>#}
+    {# Block - hero #}
+    <div class="block-hero">
+      {{ drupal_entity('block', 'hero', check_access=false) }}
+    </div>
 
-{#    #}{# Include main menu #}
-{#    <div class="block-mainmenu">#}
-{#      {% include '@sychenko_dev/includes/components/main-menu.html.twig' %}#}
-{#    </div>#}
+    {# Include main menu #}
+    <div class="block-mainmenu">
+      {% include '@kinasevych_dev/includes/components/main-menu.html.twig' %}
+    </div>
 
-{#  </div>#}
+  </div>
 
-{#</div>#}
+</div>
