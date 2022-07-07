@@ -204,7 +204,7 @@
 
         &:before {
           content: '';
-          background: url('/themes/custom/kinasevych_dev/images/icons/arrow-right.png') no-repeat;
+          background: url('/themes/custom/kinasevych_dev/images/icons/arrow.png') no-repeat;
           width: 27px;
           height: 8px;
           position: absolute;
@@ -213,6 +213,8 @@
           bottom: 0;
           margin: auto;
           transition: all .3s ease;
+
+          transform: scaleX(-1);
         }
 
       }
@@ -230,7 +232,7 @@
 
         &:after {
           content: '';
-          background: url('/themes/custom/kinasevych_dev/images/icons/arrow-right.png') no-repeat;
+          background: url('/themes/custom/kinasevych_dev/images/icons/arrow.png') no-repeat;
           width: 27px;
           height: 8px;
           position: absolute;

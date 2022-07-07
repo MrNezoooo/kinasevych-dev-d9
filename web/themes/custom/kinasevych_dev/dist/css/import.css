@@ -343,7 +343,7 @@ body:not(.path-frontpage) .main-wrap .region-content {
 }
 .portfolio-full .pager__previouse:before {
   content: "";
-  background: url("/themes/custom/kinasevych_dev/images/icons/arrow-right.png") no-repeat;
+  background: url("/themes/custom/kinasevych_dev/images/icons/arrow.png") no-repeat;
   width: 27px;
   height: 8px;
   position: absolute;
@@ -352,6 +352,7 @@ body:not(.path-frontpage) .main-wrap .region-content {
   bottom: 0;
   margin: auto;
   transition: all 0.3s ease;
+  transform: scaleX(-1);
 }
 .portfolio-full .pager__item {
   @apply tw-text-xl;
@@ -362,7 +363,7 @@ body:not(.path-frontpage) .main-wrap .region-content {
 }
 .portfolio-full .pager__item:after {
   content: "";
-  background: url("/themes/custom/kinasevych_dev/images/icons/arrow-right.png") no-repeat;
+  background: url("/themes/custom/kinasevych_dev/images/icons/arrow.png") no-repeat;
   width: 27px;
   height: 8px;
   position: absolute;
