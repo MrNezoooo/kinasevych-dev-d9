@@ -281,6 +281,170 @@ body:not(.path-frontpage) .main-wrap .region-content {
   color: #099CD7;
 }
 
+.path-about-me {
+  /* /region-content */
+}
+
+.path-about-me .region-content {
+  overflow-y: scroll;
+  max-height: 100vh;
+  /* /block& */
+}
+
+.path-about-me .region-content .node-content { /* 1 */
+  margin-top: 2.5rem;
+}
+
+.path-about-me .region-content .node-content p:not(.path-about-me .region-content .node-content p:last-child) {
+  margin-bottom: 1.25rem;
+}
+
+.path-about-me .region-content .block {
+  /* /testimonial */
+}
+
+.path-about-me .region-content .block-services { /* 2 */
+}
+
+.path-about-me .region-content .block-services .services-wrapper {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.path-about-me .region-content .block-services .services-items {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.path-about-me .region-content .block-services .service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.path-about-me .region-content .block-services .service-item img {
+  margin-bottom: 2rem;
+}
+
+.path-about-me .region-content .block-about { /* 3 - 4 */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+
+.path-about-me .region-content .block-about .block-item {
+  width: 100%;
+  max-width: 49%;
+}
+
+.path-about-me .region-content .block-about .block-item ul {
+  margin-bottom: 40px;
+}
+
+.path-about-me .region-content .block-about .block-item ul li {
+  margin-bottom: 0.5rem;
+}
+
+.path-about-me .region-content .block-about .block-item--skills ul {
+  position: relative;
+}
+
+.path-about-me .region-content .block-about .block-item--skills ul:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  content: "";
+  width: 1px;
+  height: 95%;
+  background-color: #099CD7;
+}
+
+.path-about-me .region-content .block-about .block-item--skills ul li {
+  display: flex;
+  align-items: center;
+  background: url("/themes/custom/kinasevych_dev/images/icons/arrow.png") no-repeat 5px 7px;
+  padding-left: 35px;
+}
+
+.path-about-me .region-content .block-about .block-item--skills ul li:before {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: #099CD7;
+  left: -7px;
+  border-radius: 50%;
+}
+
+.path-about-me .region-content .block-testimonials { /* 3 */
+  background-color: #EFEFFF;
+  padding-left: 85px;
+  /* /testimonials */
+}
+
+.path-about-me .region-content .block-testimonials .testimonials-inner-wrapper {
+  width: 100%;
+  max-width: 1040px;
+}
+
+.path-about-me .region-content .block-testimonials .testimonials-inner-wrapper h2 {
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.path-about-me .region-content .block-testimonials .testimonials-view-row {
+  display: flex;
+  justify-content: space-between;
+  /* /user-info-wrapper */
+}
+
+.path-about-me .region-content .block-testimonials .testimonials-view-row .testimonial-teaser {
+  width: 48%;
+}
+
+.path-about-me .region-content .block-testimonials .testimonials-view-row .testimonial-teaser .message {
+  position: relative;
+  margin-bottom: 35px;
+  background: #272B41;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25), 3px 4px 9px rgba(0, 0, 0, 0.25);
+  padding: 20px 48px 20px 78px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 19px;
+  border-top-left-radius: 75px;
+  border-bottom-right-radius: 75px;
+  height: 117px;
+}
+
+.path-about-me .region-content .block-testimonials .testimonials-view-row .testimonial-teaser .message:before {
+  content: "";
+  background: url("/themes/custom/kinasevych_dev/images/icons/quote.png") no-repeat;
+  width: 27px;
+  height: 25px;
+  display: block;
+  position: absolute;
+  top: 48%;
+  left: 32px;
+}
+
+.path-about-me .region-content .block-testimonials .testimonials-view-row .testimonial-teaser .user-info-wrapper { /*tw-justify-around*/
+  display: flex;
+  padding-bottom: 4rem;
+}
+
+.path-about-me .region-content .block-testimonials .testimonials-view-row .testimonial-teaser .user-info-wrapper .image {
+  margin-right: 15px;
+}
+
+.path-about-me .region-content .block-testimonials .testimonials-view-row .testimonial-teaser .user-info-wrapper .name {
+  display: flex;
+  align-items: center;
+}
+
 .portfolio-content {
   /* /views-infinite-scroll-content-wrapper */
 }
