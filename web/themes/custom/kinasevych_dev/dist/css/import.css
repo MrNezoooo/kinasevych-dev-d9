@@ -166,6 +166,32 @@ body:not(.path-frontpage) .header {
   z-index: -1;
 }
 
+body:not(.path-frontpage) .main-wrap {
+  @apply tw-flex tw-h-full;
+  height: 100%;
+}
+body:not(.path-frontpage) .main-wrap .region-left {
+  @apply tw-bg-cover tw-w-full;
+  background-image: url("/themes/custom/kinasevych_dev/images/region-left-bg.png");
+  max-width: 330px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 40px;
+}
+body:not(.path-frontpage) .main-wrap .region-left .social-media {
+  @apply tw-flex;
+  width: 240px;
+  align-content: center;
+  justify-content: space-between;
+}
+body:not(.path-frontpage) .main-wrap .region-left .pic:hover {
+  opacity: 0.8;
+}
+body:not(.path-frontpage) .main-wrap .region-content {
+  @apply tw-w-full;
+}
+
 .block {
   /* /about */
 }
@@ -177,4 +203,172 @@ body:not(.path-frontpage) .header {
   @apply tw-text-lg;
   margin-bottom: 50px;
   color: #099CD7;
+}
+
+.portfolio-content {
+  /* /views-infinite-scroll-content-wrapper */
+}
+.portfolio-content .views-infinite-scroll-content-wrapper {
+  @apply tw-flex tw-justify-between tw-items-center tw-flex-wrap;
+}
+.portfolio-content .views-infinite-scroll-content-wrapper .portfolio {
+  /* /portfolio-teaser */
+}
+.portfolio-content .views-infinite-scroll-content-wrapper .portfolio-teaser {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 323px;
+  max-height: 168px;
+  margin-bottom: 25px;
+}
+.portfolio-content .views-infinite-scroll-content-wrapper .portfolio-teaser img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.portfolio-content .views-infinite-scroll-content-wrapper .portfolio-teaser--overlay {
+  @apply tw-text-white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 163, 225, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 51px;
+  opacity: 0;
+  transition: 0.25s;
+  border-radius: 10px;
+  top: 0;
+}
+.portfolio-content .views-infinite-scroll-content-wrapper .portfolio-teaser--overlay:hover {
+  opacity: 1;
+}
+.portfolio-content .views-infinite-scroll-content-wrapper .portfolio-teaser--overlay---title {
+  @apply tw-text-white tw-font-semibold tw-text-3xl;
+}
+.portfolio-content .views-infinite-scroll-content-wrapper .portfolio-teaser--overlay---title:after {
+  content: "";
+  background-color: #fff;
+  height: 2px;
+  display: block;
+  margin: 9px auto;
+  width: 70%;
+}
+.portfolio-content .views-infinite-scroll-content-wrapper .portfolio-teaser--overlay---technologies {
+  @apply tw-text-white tw-text-lg;
+}
+.portfolio-content .views-infinite-scroll-content-wrapper:after {
+  content: "";
+  flex: auto;
+  max-width: 30.86%;
+  width: 100%;
+}
+.portfolio-content ul.pager {
+  margin-bottom: 65px;
+}
+.portfolio-content ul.pager li.pager__item {
+  text-align: center;
+}
+.portfolio-content ul.pager li.pager__item a.button {
+  @apply tw-text-base;
+  position: relative;
+}
+.portfolio-content ul.pager li.pager__item a.button:hover:after {
+  right: -41px;
+}
+.portfolio-content ul.pager li.pager__item a.button:after {
+  content: "";
+  background: url("/themes/custom/kinasevych_dev/images/icons/arrow-right.png") no-repeat;
+  width: 27px;
+  height: 9px;
+  position: absolute;
+  margin: auto;
+  top: 3px;
+  bottom: 0;
+  right: -36px;
+  transition: 0.3s ease right;
+}
+
+/*  /portfolio-content */
+.portfolio-full h1 {
+  @apply tw-text-3xl tw-uppercase;
+  margin: 70px 0 40px 0;
+}
+.portfolio-full ul.info-items .item {
+  @apply tw-flex;
+  margin-bottom: 10px;
+}
+.portfolio-full ul.info-items .item--label {
+  @apply tw-font-semibold;
+  color: #099CD7;
+}
+.portfolio-full .portfolio--body {
+  margin: 20px 0 30px 0;
+}
+.portfolio-full .portfolio--image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 76px;
+}
+.portfolio-full .portfolio--image img {
+  border-radius: 10px;
+}
+.portfolio-full-content {
+  @apply tw-flex tw-justify-between tw-items-center tw-flex-wrap;
+  margin-bottom: 90px;
+}
+.portfolio-full-content .nav-item {
+  @apply tw-text-xl tw-font-semibold;
+  color: #099CD7;
+}
+.portfolio-full-content:after {
+  flex: auto;
+  max-width: 30.86%;
+  width: 100%;
+}
+.portfolio-full .pager {
+  /* margin-bottom: 90px;*/
+  text-align: center;
+}
+.portfolio-full .pager__previouse {
+  @apply tw-text-xl;
+  position: relative;
+}
+.portfolio-full .pager__previouse:hover:before {
+  left: -41px;
+}
+.portfolio-full .pager__previouse:before {
+  content: "";
+  background: url("/themes/custom/kinasevych_dev/images/icons/arrow-right.png") no-repeat;
+  width: 27px;
+  height: 8px;
+  position: absolute;
+  left: -31px;
+  top: 3px;
+  bottom: 0;
+  margin: auto;
+  transition: all 0.3s ease;
+}
+.portfolio-full .pager__item {
+  @apply tw-text-xl;
+  position: relative;
+}
+.portfolio-full .pager__item:hover:after {
+  right: -41px;
+}
+.portfolio-full .pager__item:after {
+  content: "";
+  background: url("/themes/custom/kinasevych_dev/images/icons/arrow-right.png") no-repeat;
+  width: 27px;
+  height: 8px;
+  position: absolute;
+  right: -31px;
+  top: 3px;
+  bottom: 0;
+  margin: auto;
+  transition: all 0.3s ease;
 }

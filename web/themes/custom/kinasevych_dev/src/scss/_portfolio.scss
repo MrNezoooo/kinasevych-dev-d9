@@ -1,0 +1,247 @@
+//============(Portfolio Teaser Part)============
+.portfolio-content {
+
+  .views-infinite-scroll-content-wrapper {
+    @apply tw-flex tw-justify-between tw-items-center tw-flex-wrap;
+
+
+    .portfolio {
+      &-teaser {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        max-width: 323px;
+        max-height: 168px;
+        margin-bottom: 25px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 10px;
+          object-fit: cover;
+        }
+
+        &--overlay {
+          @apply tw-text-white;
+
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 163, 225, 0.6);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-top: 51px;
+          opacity: 0;
+          transition: 0.25s;
+          border-radius: 10px;
+          top: 0;
+
+          &:hover {
+            opacity: 1;
+          }
+
+          //--------
+
+          &---title {
+            @apply tw-text-white tw-font-semibold tw-text-3xl;
+          }
+
+          &---title:after {
+            content: '';
+            background-color: #fff;
+            height: 2px;
+            display: block;
+            margin: 9px auto;
+            width: 70%;
+          }
+
+          &---technologies {
+            @apply tw-text-white tw-text-lg;
+          }
+
+        }
+
+      }
+
+      /* /portfolio-teaser */
+    }
+
+    &:after {
+      content: "";
+      flex: auto;
+      max-width: 30.86%;
+      width: 100%;
+    }
+  }
+
+  /* /views-infinite-scroll-content-wrapper */
+
+  //---More ->-----------------------------------
+  ul.pager {
+    margin-bottom: 65px;
+
+    li.pager__item {
+      text-align: center;
+
+      a.button {
+        @apply tw-text-base;
+
+        position: relative;
+
+        &:hover {
+          &:after {
+            right: -41px;
+          }
+        }
+
+        &:after {
+          content: '';
+          background: url('/themes/custom/kinasevych_dev/images/icons/arrow-right.png') no-repeat;
+          width: 27px;
+          height: 9px;
+          position: absolute;
+          margin: auto;
+          top: 3px;
+          bottom: 0;
+          right: -36px;
+          transition: .3s ease right;
+        }
+      }
+
+    }
+  }
+
+}
+
+/*  /portfolio-content */
+
+
+//============(Portfolio Main Part)============
+.portfolio {
+  &-full {
+
+    h1 {
+      @apply tw-text-3xl tw-uppercase;
+
+      margin: 70px 0 40px 0;
+    }
+
+    ul.info-items {
+      .item {
+        @apply tw-flex;
+
+        margin-bottom: 10px;
+
+        &--label {
+          @apply tw-font-semibold;
+
+          color: $primary-yellow;
+        }
+
+        &--name {
+
+        }
+
+        &--url {
+
+        }
+      }
+    }
+
+    //---next previous block--------------
+    .portfolio {
+      &--body {
+        margin: 20px 0 30px 0;
+      }
+
+      &--image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 76px;
+
+        img {
+          border-radius: 10px;
+        }
+      }
+    }
+
+    //----------
+    &-content {
+
+      @apply tw-flex tw-justify-between tw-items-center tw-flex-wrap;
+
+      margin-bottom: 90px;
+
+      .nav-item {
+        @apply tw-text-xl tw-font-semibold;
+
+        color: $primary-yellow;
+      }
+
+      &:after {
+        flex: auto;
+        max-width: 30.86%;
+        width: 100%;
+      }
+    }
+
+    .pager {
+      /* margin-bottom: 90px;*/
+      text-align: center;
+
+      &__previouse {
+        @apply tw-text-xl;
+
+        position: relative;
+
+        &:hover {
+          &:before {
+            left: -41px;
+          }
+        }
+
+        &:before {
+          content: '';
+          background: url('/themes/custom/kinasevych_dev/images/icons/arrow-right.png') no-repeat;
+          width: 27px;
+          height: 8px;
+          position: absolute;
+          left: -31px;
+          top: 3px;
+          bottom: 0;
+          margin: auto;
+          transition: all .3s ease;
+        }
+
+      }
+
+      &__item {
+        @apply tw-text-xl;
+
+        position: relative;
+
+        &:hover {
+          &:after {
+            right: -41px;
+          }
+        }
+
+        &:after {
+          content: '';
+          background: url('/themes/custom/kinasevych_dev/images/icons/arrow-right.png') no-repeat;
+          width: 27px;
+          height: 8px;
+          position: absolute;
+          right: -31px;
+          top: 3px;
+          bottom: 0;
+          margin: auto;
+          transition: all .3s ease;
+        }
+      }
+    }
+  }
+
+}

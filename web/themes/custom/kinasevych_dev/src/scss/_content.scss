@@ -15,6 +15,53 @@
   }
 }
 
+
+body {
+  &:not(.path-frontpage) {
+    .main-wrap {
+      @apply tw-flex tw-h-full;
+
+      height: 100%;
+
+      .region {
+        &-left {
+          @apply tw-bg-cover tw-w-full;
+
+          background-image: url('/themes/custom/kinasevych_dev/images/region-left-bg.png');
+          max-width: 330px;
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          padding-bottom: 40px;
+
+          .social-media {
+            @apply tw-flex;
+
+
+            width: 240px;
+            align-content: center;
+            justify-content: space-between;
+
+          }
+          .pic:hover {
+            opacity: 0.8;
+          }
+
+
+        }
+
+        &-content {
+          @apply tw-w-full;
+        }
+
+
+      }
+    }
+  }
+}
+
+
+
 .block {
   &-hero {
     @apply tw-mt-32;
@@ -31,4 +78,3 @@
   } /* /about */
 
 }
-
