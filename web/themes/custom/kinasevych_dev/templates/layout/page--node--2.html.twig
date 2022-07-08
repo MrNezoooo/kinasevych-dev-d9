@@ -1,0 +1,25 @@
+{# {{ vardumper(content) }} #}
+
+
+{# Include header twig template #}
+{% include '@kinasevych_dev/includes/header.html.twig' %}
+
+
+<div class="main-wrap">
+
+  {# Include region-left twig template #}
+  {% include '@kinasevych_dev/includes/components/region-left.html.twig' %}
+
+  <div class="tw-container-inner">
+
+    <div class="block-title">
+      <h1 class="inner-page">Contact <span class="color-text">Me</span></h1>
+    </div>
+
+    <div class="contact-form-wrap">
+      {{ drupal_entity('webform', 'contact') }}
+    </div>
+
+  </div>{# /.layout-container #}
+
+</div>

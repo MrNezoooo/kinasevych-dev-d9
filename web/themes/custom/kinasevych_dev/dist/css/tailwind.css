@@ -281,6 +281,45 @@ body:not(.path-frontpage) .main-wrap .region-content {
   color: #099CD7;
 }
 
+.path-contact .contact-form-wrap {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.path-contact .contact-form-wrap input, .path-contact .contact-form-wrap .form-textarea {
+  border: 1px solid #099CD7;
+  width: 532px;
+  padding: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.path-contact .contact-form-wrap #edit-attach-files {
+  text-decoration: underline;
+  margin-bottom: 33px;
+}
+
+.path-contact .contact-form-wrap #edit-actions-submit {
+  display: flex;
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0;
+  background-color: #099CD7;
+  width: 205px;
+  height: 50px;
+}
+
+.path-contact .contact-form-wrap input.webform-button--submit {
+  margin-bottom: 132px;
+}
+
 .path-about-me {
   /* /region-content */
 }

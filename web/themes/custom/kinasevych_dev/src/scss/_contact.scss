@@ -1,0 +1,35 @@
+.path-contact {
+    .contact-form-wrap {
+
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+
+      input, .form-textarea {
+        border: 1px solid $primary-yellow;
+        width: 532px;
+        padding: 20px;
+        margin-bottom: 20px;
+        cursor:pointer;
+      }
+
+      #edit-attach-files {
+        @apply tw-underline;
+
+        margin-bottom: 33px;
+      }
+
+      #edit-actions-submit {
+        @apply tw-flex tw-text-white tw-uppercase tw-items-center tw-justify-center tw-text-base tw-font-medium tw-p-0;
+
+        background-color: $primary-yellow;
+        width: 205px;
+        height: 50px;
+      }
+
+      input.webform-button--submit {
+        margin-bottom: 132px;
+      }
+
+    }
+}
