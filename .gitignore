@@ -23,10 +23,6 @@
 # Ignore .env files as they are personal
 /.env
 
-#Exports
-*.gz
-*.sql
-*.zip
 
 # Custom
 /.lando/
