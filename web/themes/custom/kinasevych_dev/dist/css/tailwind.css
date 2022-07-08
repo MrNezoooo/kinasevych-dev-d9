@@ -320,6 +320,8 @@ body:not(.path-frontpage) .main-wrap .region-content {
   margin-bottom: 132px;
 }
 
+/* overflow-y: hidden; */
+
 .path-about-me {
   /* /region-content */
 }
