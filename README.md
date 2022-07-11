@@ -1,4 +1,4 @@
-##Portfolio website
+## Portfolio website
 
 ---
 Step 1: lando init  -> # Interactively instantiate your code for use with lando (install lando global on your computer)
@@ -16,5 +16,7 @@ Step 4: Open http://kinasevych-dev-d9.lndo.site/  - Complete authentication
         ADVANCED OPTIONS: Host -> database
 
 Step 5: lando db-import drupal9.2022-07-08-1657294032.sql.gz
+
+Step 6: lando rebuild
 
 ---
